@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*HEADER QUE SEMPRE FICA NO TOPO, NÃO MEXA!*/
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,.15);
+  z-index: 1000;
+}
+
+.navbar{
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo img{
+  height: 55px;
+}
+
+#lista ul{
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+#lista a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#faleconosco a{
+  text-decoration: none;
+  background: #573457;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+main{
+  padding-top: 80px;
+}
+/*Fim do Header*/
+
+
+.cards{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*Isso é um exemplo de um card, aplique isso para TODOS os outros cards!*/
+.cardI50{
+  width: 280px;
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  box-shadow: 0px 5px 15px rgba(0,0,0,.15);
+
+  transition: .3s;
+}
+
+.cardI50 img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.cardI50 h3{
+  margin-bottom: 15px;
+  color: #0047FF;
+}
+
+.cardI50 p{
+  color: #666;
+  line-height: 1.6;
+}
+/*Fim do exemplo*/
+
