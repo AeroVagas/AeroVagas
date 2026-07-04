@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 
@@ -52,6 +53,11 @@
   border-radius: 30px;
 }
 
+section{
+  width: 100%;
+  min-height: 100vh;
+}
+
 main{
   padding-top: 80px;
 }
@@ -63,6 +69,17 @@ main{
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+#home {
+  background-image: url("img/fndHome.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cursos {
+  background-color: #F5F7FA;
 }
 
 /*Isso é um exemplo de um card, aplique isso para TODOS os outros cards!*/
@@ -100,4 +117,3 @@ main{
   line-height: 1.6;
 }
 /*Fim do exemplo*/
-
