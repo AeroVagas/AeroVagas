@@ -1,119 +1,364 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
 }
 
+/* ================= HEADER ================= */
 
-/*HEADER QUE SEMPRE FICA NO TOPO, NÃO MEXA!*/
 .header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,.15);
-  z-index: 1000;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:80px;
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,.15);
+  z-index:1000;
 }
 
 .navbar{
-  width: 90%;
-  max-width: 1200px;
-  height: 100%;
-  margin: auto;
+  width:90%;
+  max-width:1200px;
+  height:100%;
+  margin:auto;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
 #logo img{
-  height: 55px;
+  height:55px;
 }
 
 #lista ul{
-  display: flex;
-  list-style: none;
-  gap: 35px;
+  display:flex;
+  list-style:none;
+  gap:35px;
 }
 
 #lista a{
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+  text-decoration:none;
+  color:#202020;
+  font-weight:600;
+  transition:.3s;
+}
+
+#lista a:hover{
+  color:#573457;
 }
 
 #faleconosco a{
-  text-decoration: none;
-  background: #573457;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 30px;
+  text-decoration:none;
+  background:#573457;
+  color:white;
+  padding:10px 20px;
+  border-radius:30px;
+  transition:.3s;
 }
 
-section{
-  width: 100%;
-  min-height: 100vh;
+#faleconosco a:hover{
+  background:#6d416d;
 }
 
 main{
-  padding-top: 80px;
+  padding-top:80px;
 }
-/*Fim do Header*/
 
+/* ================= SEÇÕES ================= */
+
+section{
+  width:100%;
+  min-height:100vh;
+}
+
+/* ================= HOME ================= */
+
+#home{
+  background-image:url("img/fndHome.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  display:flex;
+  align-items:center;
+}
+
+.div-home{
+
+  margin-left:180px;
+  color:white;
+  max-width:500px;
+}
+
+.div-home p{
+  font-size:22px;
+  margin-bottom:8px;
+}
+
+.div-home h1{
+  font-size:70px;
+  font-weight:800;
+  margin-bottom:25px;
+}
+
+.div-home a{
+  display:inline-block;
+
+  text-decoration:none;
+
+  background:#573457;
+
+  color:white;
+
+  padding:15px 30px;
+
+  border-radius:40px;
+
+  font-weight:600;
+
+  transition:.3s;
+}
+
+.div-home a:hover{
+  transform:translateY(-4px);
+}
+
+/* ================= CURSOS ================= */
+
+#cursos{
+
+  background:#202020;
+
+  padding:70px 60px;
+}
+
+.titleB{
+
+  color:white;
+
+  text-align:center;
+
+  font-size:32px;
+
+  font-weight:700;
+
+  margin-bottom:20px;
+}
+
+.txtB{
+
+  color:#EAEAEA;
+
+  text-align:center;
+
+  max-width:850px;
+
+  margin:0 auto 50px;
+
+  line-height:1.8;
+
+  font-size:16px;
+}
+/* ================= VAGAS ================= */
+
+#vagas{
+
+  background:#F5F7FA;
+
+  padding:70px 60px;
+}
+
+.titleP{
+
+  color:#202020;
+
+  text-align:center;
+
+  font-size:32px;
+
+  font-weight:700;
+
+  margin-bottom:20px;
+}
+
+.txtP{
+
+  color:#555;
+
+  text-align:center;
+
+  max-width:850px;
+
+  margin:0 auto 50px;
+
+  line-height:1.8;
+
+  font-size:16px;
+}
+
+/* ================= CURRÍCULO ================= */
+
+#curriculo{
+
+  background:white;
+
+  padding:70px 60px;
+}
+
+/* ================= CARDS ================= */
 
 .cards{
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
+
+  display:flex;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+  gap:30px;
 }
 
-#home {
-  background-image: url("img/fndHome.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.card{
+
+  width:270px;
+
+  background:white;
+
+  border-radius:18px;
+
+  overflow:hidden;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+  transition:.3s;
 }
 
-#cursos {
-  background-color: #F5F7FA;
+.card:hover{
+
+  transform:translateY(-10px);
+
+  box-shadow:0 10px 25px rgba(0,0,0,.20);
 }
 
-/*Isso é um exemplo de um card, aplique isso para TODOS os outros cards!*/
-.cardI50{
-  width: 280px;
-  background: white;
+.card img{
 
-  border-radius: 20px;
+  width:100%;
 
-  padding: 25px;
+  height:170px;
 
-  text-align: center;
+  object-fit:cover;
 
-  box-shadow: 0px 5px 15px rgba(0,0,0,.15);
-
-  transition: .3s;
+  object-position:center;
 }
 
-.cardI50 img{
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 15px;
-  margin-bottom: 20px;
+.card h3{
+
+  color:#0057FF;
+
+  font-size:19px;
+
+  margin:18px 18px 10px;
 }
 
-.cardI50 h3{
-  margin-bottom: 15px;
-  color: #0047FF;
+.card p{
+
+  color:#666;
+
+  font-size:14px;
+
+  line-height:1.7;
+
+  margin:0 18px 22px;
 }
 
-.cardI50 p{
-  color: #666;
-  line-height: 1.6;
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:1100px){
+
+  .div-home{
+
+      margin-left:80px;
+  }
+
+  .div-home h1{
+
+      font-size:55px;
+  }
 }
-/*Fim do exemplo*/
+
+@media(max-width:768px){
+
+  .navbar{
+
+      flex-direction:column;
+
+      justify-content:center;
+
+      gap:10px;
+
+      height:auto;
+
+      padding:15px 0;
+  }
+
+  .header{
+
+      height:auto;
+  }
+
+  main{
+
+      padding-top:140px;
+  }
+
+  #lista ul{
+
+      gap:20px;
+
+      flex-wrap:wrap;
+
+      justify-content:center;
+  }
+
+  .div-home{
+
+      margin:0 30px;
+
+      text-align:center;
+
+      max-width:100%;
+  }
+
+  .div-home h1{
+
+      font-size:45px;
+  }
+
+  #cursos,
+  #vagas,
+  #curriculo{
+
+      padding:60px 25px;
+  }
+
+  .titleB,
+  .titleP{
+
+      font-size:26px;
+  }
+
+  .txtB,
+  .txtP{
+
+      font-size:15px;
+  }
+
+  .card{
+
+      width:100%;
+      max-width:330px;
+  }
+}
