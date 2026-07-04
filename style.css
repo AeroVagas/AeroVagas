@@ -6,7 +6,7 @@
 }
 
 
-/* ================= HEADER ================= */
+/* ================= HEADER NÃO MEXA ================= */
 
 .header {
     position: fixed;
@@ -214,7 +214,7 @@ section {
 }
 
 
-/* ================= RESPONSIVO ================= */
+/* ================= RESPONSIVO (FEITO COM IA) ================= */
 
 @media(max-width:1100px) {
     .div-home {
@@ -309,6 +309,9 @@ span {
     max-width: 800px;
 }
 
+
+/* ================= FOOTER (FEITO COM IA) ================= */
+
 #footer {
     background: #FD3A00;
     color: white;
@@ -354,4 +357,83 @@ span {
 .copyright {
     text-align: center;
     color: white;
+}
+
+
+/* ================= RESPONSIVO PARA CELULAR (FEITO COM IA) ================= */
+
+@media(max-width: 900px) {
+    .header {
+        height: auto;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+    #lista ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    main {
+        padding-top: 170px;
+    }
+    #home {
+        min-height: calc(100vh - 170px);
+        justify-content: center;
+        text-align: center;
+    }
+    .div-home {
+        margin-left: 0;
+        padding: 0 25px;
+    }
+    .div-home h1 {
+        font-size: 45px;
+    }
+    .div-home p {
+        font-size: 18px;
+    }
+    #cursos,
+    #vagas,
+    #curriculo {
+        padding: 60px 25px;
+    }
+    .titleB,
+    .titleP {
+        font-size: 26px;
+    }
+    .txtB,
+    .txtP {
+        font-size: 15px;
+        max-width: 100%;
+    }
+    .cards {
+        gap: 25px;
+        padding: 0;
+    }
+    .card {
+        width: 100%;
+        max-width: 330px;
+    }
+    #curriculo {
+        min-height: auto;
+        padding: 70px 25px;
+    }
+    .curriculo-container {
+        width: 100%;
+        padding: 35px 20px;
+    }
+    #footer {
+        padding: 35px 25px;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .nomes {
+        justify-content: center;
+        gap: 25px;
+    }
 }
